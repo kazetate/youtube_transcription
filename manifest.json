@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Transcript Tools",
+  "version": "1.2.0",
+  "description": "YouTubeの動画ページに、字幕の取得・コピー・テキスト保存・タイムスタンプ切替のUIを追加します。",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
